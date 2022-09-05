@@ -31,12 +31,51 @@ void printArray(int arr[],int size){
     }
 }
 
+
+void rotating_arr(int nums[],int k){
+
+    int last=k-1;
+    int first=0;
+
+    while (first < last)
+    {
+        int from_first_ele=nums[first];
+        nums[first]=nums[last];
+        nums[last]=from_first_ele;
+
+
+        first+=1;
+        last-=1;
+    }
+    
+
+}
+void rotate(int nums[], int k) {
+        int last=sizeof(nums)/sizeof(int);
+        int first=0;
+
+        while (first < k)
+        {
+            nums[(first+k)%last]=nums[first];
+            first+=1;
+        }
+    }
+
 int main(){
 
-    int size=5;
+    int size=3;
     int arr[5]={0,1,2,3,4};
-    swap(arr,size);
+    // swap(arr,size);
     // printArray(arr,size);
+    // int sizes=sizeof(arr)/sizeof(int);
+    // int k=3;
+    // for(int i=0;i<sizes;i++){
+        
+    //     cout<<(i+k)<<" "<<(i+k)%sizes<<endl;
+
+    // }
+    cout<<"After Reverse"<<endl;
+    rotate(arr,size);
 
     for(int k:arr){
         cout<<" element: "<<k<<endl;
