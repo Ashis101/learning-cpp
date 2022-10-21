@@ -18,6 +18,7 @@ int main(){
         vector<int> temp;
         for(int j;j<x;j++){
             int y;
+            // v[i].push_back(y);
             temp.push_back(y);
         }
         v.push_back(temp);
