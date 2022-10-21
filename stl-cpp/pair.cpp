@@ -17,6 +17,7 @@ int main() {
         cout<<x[i].first<<" "<<x[i].second;
     }
 
+    // pair of pair making
     pair<int,pair<int,string>> as;
     as={1,{10,"ashis"}};
     cout<<as.second.second;
