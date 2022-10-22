@@ -35,10 +35,26 @@ int main(){
         // iterator pointing to a pair
         cout<<(*it1).first <<endl;
         // another syntex of iterator
-        //cout<<(it1->first)<<" "<<(it1->second)<<endl;
+        // cout<<(it1->first)<<" "<<(it1->second)<<endl;
     }
 
 
+    // range itrator
+
+    for(pair<int,int> &value: vp){
+        cout<<value.first<<endl;
+    }
+
+    // using auto with range 
+    // auto detect what data type assign to valiable
+    for(auto &value1: vp){
+        cout<<value1.first<<endl;
+    }
+
+
+
+
+    
 
 
     
