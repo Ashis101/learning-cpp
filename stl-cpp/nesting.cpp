@@ -25,5 +25,17 @@ int main(){
     }
 
 
+    map<pair<string,string>,vector<int>> m;
+
+    m[{"ashis","banerjee"}].push_back(10);
+    m[{"subho","chandra"}].push_back(20);
+
+    for(auto &it: m){
+        auto &name=it.first;
+        auto &list=it.second;
+
+        cout<<"First"<<"::"<< name.first;
+        cout<<"list"<<"::"<< list;
+    }
 }
 

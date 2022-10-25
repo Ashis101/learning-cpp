@@ -21,6 +21,7 @@ int main() {
     pair<int,pair<int,string>> as;
     as={1,{10,"ashis"}};
     cout<<as.second.second;
+    
 
     
   
